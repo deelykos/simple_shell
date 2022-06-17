@@ -35,4 +35,7 @@ char *_strcat(char *dest, char *src);
 char *_getenv(char *path);
 char *_itoa(int num, char *str);
 void prompt(void);
+int shell_alias(char **args, char __attribute__((__unused__)) **front);
+void set_alias(char *var_name, char *value);
+void print_alias(alias_t *alias);
 #endif
